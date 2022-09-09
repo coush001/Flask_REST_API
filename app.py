@@ -12,7 +12,7 @@ def index():
 
 
 
-@app.route('/hello', methods=['POST'])
+@app.route('/hello', methods=['GET'])
 def hello():
     print('request for hello page recieved')
     return render_template('hello.html')
