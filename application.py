@@ -26,6 +26,9 @@ class CarsModel(db.Model):
     def __repr__(self):
         return f"<Car {self.name}>"
 
+@app.route('/')
+def hi():
+    return 'Try the /cars endpoint'
 
 @app.route('/cars', methods=['POST'])
 def post_car():
